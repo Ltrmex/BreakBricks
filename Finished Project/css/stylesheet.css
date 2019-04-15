@@ -1,0 +1,78 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.infordisplay {
+    position: absolute;
+    margin: 2vw;
+    top: 0.0vw;
+    color: #fff;
+}
+
+.floatleft {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.dispblock {
+    display: block;
+}
+
+.border {
+    border: 2px solid #fff;
+}
+
+.controls {
+    padding: 1vw 0vw 0vw 0vw;
+    font-size: 1vw;
+}
+
+.pauseoverlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    /* display: none; */
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+}
+
+.overlaycenter {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    margin-top: -3vw;
+    margin-left: -15vw;
+    font-size: 0vw;
+    color: #ff8800;
+    opacity: 0;
+    font-weight: bold;
+
+}
+
+.canvasbox {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    width: 215px;
+    height: 162px;
+    border-bottom: 3px solid #0063FF;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+
+}

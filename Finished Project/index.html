@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Break Bricks</title>
+    
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body class="body">
+    <div class="infordisplay ">
+
+        <h3>Game Stats</h3>
+        <div id="stats">Score: 0 Lives: 3</div>
+
+        <div class="controls">
+            <h3>Button Controls</h3>
+            <div>Use arrow keys or 'w', 'a', 's', 'd' keys to move the paddle</div>
+            </br>
+            <div>Start -> spacebar</div>
+            <div>Pause -> p </div>
+            <div>Restart -> r</div>
+            </br></br>
+            <h3>Gesture Controls</h3>
+            <div>Wave hand in front of camera to controll the paddle </br>(camera must be enabled)</div>
+            </br>
+            <div>Start -> say the phrase "start"</div>
+            <div>Pause -> say the phrase "pause" </div>
+            <div>Restart -> say the phrase "restart"</div>
+        </div>
+
+        </br>
+        <button  id="trackbutton" class="bx--btn bx--btn--secondary mt10 trackbutton" type="button" disabled>
+            Turn on / Turn off Gesture Control
+        </button>
+        </br>
+        <button id="start-record-btn" title="Start Recording">Start Recognition</button>
+        <button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>
+
+        <div class="input-single">
+            <textarea id="note-textarea" rows="6"></textarea>
+        </div>    
+    </div>
+    <video class="videobox canvasbox" autoplay="autoplay" id="myvideo"></video>
+  <canvas id="canvas" class="border canvasbox"></canvas>
+
+    <div class="pauseoverlay">
+        <div class="overlaycenter">
+            Loading Model ..
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/planck-js/0.1.44/planck-with-testbed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="js/handtrack.min.js"> </script>
+    <script src="js/game.js"></script>
+    <script src="js/speech.js"></script>
+</body>
+
+</html>
